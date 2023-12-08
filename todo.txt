@@ -1,0 +1,3 @@
+Parse info.amount
+Parse info.payBillOrTill
+Parse phone number
