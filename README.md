@@ -5,7 +5,9 @@ A nodejs module to simplify integration of daraja api endpoints
 - M-Pesa Express
 
 # Install
-`npm i @saverious/daraja`
+```text
+npm i @saverious/daraja
+```
 
 # Usage
 ```javascript
@@ -33,6 +35,7 @@ async function payViaMpesa() {
 }
 
 payViaMpesa();
+```
 
 # API
 ## new Daraja(options)
@@ -42,7 +45,6 @@ payViaMpesa();
     * `environment` <string> The current project environment. One of either `development` or `production`
 
 All the three key/value pairs in `options` are required
-### example
 
 ## daraja.stkPush(options)
 * `options` <object> Options containing payment details. Can have the following fields:
