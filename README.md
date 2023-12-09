@@ -2,9 +2,11 @@
 A nodejs module to simplify integration of daraja api endpoints
 
 # supported endpoints
+```plaintext
 - M-Pesa Express
 
 # Install
+```plaintext
 npm i @saverious/daraja
 
 # Usage
