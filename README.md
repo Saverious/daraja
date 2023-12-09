@@ -1,5 +1,10 @@
 # @saverious/daraja
-A nodejs module to simplify integration of daraja api endpoints
+## About
+`@saverious/daraja` module was designed to simplify integration of daraja api endpoints by reducing not only the  
+syntax complexity of the raw api, but also the number of required arguments
+
+## Limitations
+As of the current date, the module supports only the M-Pesa Express API (stk-push)
 
 # Supported endpoints
 - M-Pesa Express
