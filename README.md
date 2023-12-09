@@ -39,23 +39,23 @@ payViaMpesa();
 
 # API
 ## new Daraja(options)
-* `options` &ltobject&gt Set of configurable options to set on the class. Can have the following fields:
-    * `consumer_key` &ltstring&gt Your consumer key from the safaricom portal
-    * `consumer_secret` &ltstring&gt Your consumer secret from the safaricom portal
-    * `environment` &ltstring&gt The current project environment. One of either `development` or `production`
+* `options` &lt;object&gt; Set of configurable options to set on the class. Can have the following fields:
+    * `consumer_key` &lt;string&gt; Your consumer key from the safaricom portal
+    * `consumer_secret` &lt;string&gt; Your consumer secret from the safaricom portal
+    * `environment` &lt;string&gt; The current project environment. One of either `development` or `production`
 
 All the three key/value pairs in `options` are required
 
 ## daraja.stkPush(options)
-* `options` &ltobject&gt Options containing payment details. Can have the following fields:
-    * `sender_phone` &ltstring&gt The sender's phone number. `required : true`
-    * `payBillOrTillNumber` &ltstring&gt The account number (Paybill number or Till number) to which funds will  
+* `options` &lt;object&gt; Options containing payment details. Can have the following fields:
+    * `sender_phone` &lt;string&gt; The sender's phone number. `required : true`
+    * `payBillOrTillNumber` &lt;string&gt; The account number (Paybill number or Till number) to which funds will  
        be sent. `required : true`
-    * `amount` &ltstring&gt The amount to be sent. `required : true`
-    * `callback_url` &ltstring&gt The URL to which the response from safaricom should be sent. `required : true`
-    *  `passkey` &ltstring&gt The passkey from safaricom. `required : true` only if `environment === production`,
+    * `amount` &lt;string&gt; The amount to be sent. `required : true`
+    * `callback_url` &lt;string&gt; The URL to which the response from safaricom should be sent. `required : true`
+    *  `passkey` &lt;string&gt; The passkey from safaricom. `required : true` only if `environment === production`,
         otherwise `required : false`
-    * `account_reference` &ltstring&gt  An Identifier of the transaction for the CustomerPayBillOnline transaction type.
+    * `account_reference` &lt;string&gt;  An Identifier of the transaction for the CustomerPayBillOnline transaction type.
        `required : false`
-    * `transaction_desc` &ltstring&gt Any additional information/comment that can be sent along with the request from
+    * `transaction_desc` &lt;string&gt; Any additional information/comment that can be sent along with the request from
        your system. `required : false`
