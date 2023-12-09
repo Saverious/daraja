@@ -59,3 +59,5 @@ All the three key/value pairs in `options` object are required
        `required : false`
     * `transaction_desc` &lt;string&gt; Any additional information/comment that can be sent along with the request from
        your system. `required : false`
+
+* `Returns` &lt;Promise&gt;
