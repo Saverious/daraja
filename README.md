@@ -44,7 +44,7 @@ payViaMpesa();
     * `consumer_secret` &lt;string&gt; Your consumer secret from the safaricom portal
     * `environment` &lt;string&gt; The current project environment. One of either `development` or `production`
 
-All the three key/value pairs in `options` are required
+All the three key/value pairs in `options` object are required
 
 ## daraja.stkPush(options)
 * `options` &lt;object&gt; Options containing payment details. Can have the following fields:
