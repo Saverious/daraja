@@ -1,5 +1,5 @@
 {
-  "name": "daraja-module",
+  "name": "daraja",
   "version": "1.0.0",
   "description": "A nodejs library to simplify the integration of safaricom's daraja api",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Saverious/lipa-na-mpesa.git"
+    "url": "git+https://github.com/Saverious/daraja.git"
   },
   "keywords": [
     "daraja-api",
@@ -18,9 +18,9 @@
   "author": "Saverious Ipeni",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Saverious/lipa-na-mpesa/issues"
+    "url": "https://github.com/Saverious/daraja/issues"
   },
-  "homepage": "https://github.com/Saverious/lipa-na-mpesa#readme",
+  "homepage": "https://github.com/Saverious/daraja#readme",
   "dependencies": {
     "axios": "^1.6.2"
   },

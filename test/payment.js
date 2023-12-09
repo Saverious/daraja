@@ -1,4 +1,4 @@
-const Daraja = require('../src/index');
+const Daraja = require('daraja');
 
 async function payViaMpesa() {
     try{
