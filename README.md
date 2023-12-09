@@ -49,7 +49,7 @@ All the three key/value pairs in `options` object are required
 ## daraja.stkPush(options)
 * `options` &lt;object&gt; Options containing payment details. Can have the following fields:
     * `sender_phone` &lt;string&gt; The sender's phone number. `required : true`
-    * `payBillOrTillNumber` &lt;string&gt; The account number (Paybill number or Till number) to which funds will  
+    * `payBillOrTillNumber` &lt;string&gt; The account number (Paybill number or Till number) to which funds should
        be sent. `required : true`
     * `amount` &lt;string&gt; The amount to be sent. `required : true`
     * `callback_url` &lt;string&gt; The URL to which the response from safaricom should be sent. `required : true`
