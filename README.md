@@ -8,4 +8,28 @@ A nodejs module to simplify integration of daraja api endpoints
 npm i @saverious/daraja
 
 # Usage
-![code sample](https://res.cloudinary.com/daqydivx4/image/upload/v1702106314/carbon_d2j2q6.png)
+```javascript
+const Daraja = require('@saverious/daraja');
+
+async function payViaMpesa() {
+    try{
+        const daraja = new Daraja({
+            consumer_key : 'your consumer key',
+            consumer_secret : 'your consumer secret',
+            environment : 'development' 
+        });
+        
+        const response = await daraja.stkPush({
+            sender_phone : '0767456201',
+            payBillOrTillNumber : '174379',
+            amount : '1',
+            callback_url : 'https://ac10-102-135-169-116.ngrok-free.app'
+        });
+        
+        console.log('safaricom response : ', response);
+    }catch(error){
+        console.log('payment error : ', error);
+    }
+}
+
+payViaMpesa();
