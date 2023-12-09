@@ -1,11 +1,12 @@
 # @saverious/daraja
 A nodejs module to simplify integration of daraja api endpoints
 
-# supported endpoints
+# Supported endpoints
 - M-Pesa Express
 
 # Install
-`npm i @saverious/daraja`
+```
+npm i @saverious/daraja
 
 # Usage
 ```javascript
