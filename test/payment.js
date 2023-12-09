@@ -5,7 +5,7 @@ async function payViaMpesa() {
         const daraja = new Daraja({
             consumer_key : 'your consumer key',
             consumer_secret : 'your consumer secret',
-            environment : 'development'
+            environment : 'development' 
         });
         
         const response = await daraja.stkPush({
