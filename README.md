@@ -1,6 +1,6 @@
 # @saverious/daraja
 ## About
-`@saverious/daraja` module was designed to simplify integration of daraja api endpoints by reducing not only the  
+`@saverious/daraja` module was designed to simplify integration of daraja api endpoints by reducing not only the
 syntax complexity of the raw api, but also the number of required arguments
 
 ## Limitations
