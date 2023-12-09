@@ -5,7 +5,8 @@ A nodejs module to simplify integration of daraja api endpoints
 - M-Pesa Express
 
 # Install
-`npm i @saverious/daraja`
+```text
+npm i @saverious/daraja
 
 # Usage
 ```javascript
