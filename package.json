@@ -1,5 +1,5 @@
 {
-  "name": "daraja",
+  "name": "@saverious/daraja",
   "version": "1.0.0",
   "description": "A nodejs library to simplify the integration of safaricom's daraja api",
   "main": "index.js",
