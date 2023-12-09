@@ -39,23 +39,23 @@ payViaMpesa();
 
 # API
 ## new Daraja(options)
-* `options` <object> Set of configurable options to set on the class. Can have the following fields:
-    * `consumer_key` <string> Your consumer key from the safaricom portal
-    * `consumer_secret` <string> Your consumer secret from the safaricom portal
-    * `environment` <string> The current project environment. One of either `development` or `production`
+* `options` &ltobject&gt Set of configurable options to set on the class. Can have the following fields:
+    * `consumer_key` &ltstring&gt Your consumer key from the safaricom portal
+    * `consumer_secret` &ltstring&gt Your consumer secret from the safaricom portal
+    * `environment` &ltstring&gt The current project environment. One of either `development` or `production`
 
 All the three key/value pairs in `options` are required
 
 ## daraja.stkPush(options)
-* `options` <object> Options containing payment details. Can have the following fields:
-    * `sender_phone` <string> The sender's phone number. `required : true`
-    * `payBillOrTillNumber` <string> The account number (Paybill number or Till number) to which funds will  
+* `options` &ltobject&gt Options containing payment details. Can have the following fields:
+    * `sender_phone` &ltstring&gt The sender's phone number. `required : true`
+    * `payBillOrTillNumber` &ltstring&gt The account number (Paybill number or Till number) to which funds will  
        be sent. `required : true`
-    * `amount` <string> The amount to be sent. `required : true`
-    * `callback_url` <string> The URL to which the response from safaricom should be sent. `required : true`
-    *  `passkey` <string> The passkey from safaricom. `required : true` only if `environment === production`,  
+    * `amount` &ltstring&gt The amount to be sent. `required : true`
+    * `callback_url` &ltstring&gt The URL to which the response from safaricom should be sent. `required : true`
+    *  `passkey` &ltstring&gt The passkey from safaricom. `required : true` only if `environment === production`,
         otherwise `required : false`
-    * `account_reference` <string>  An Identifier of the transaction for the CustomerPayBillOnline transaction type.  
+    * `account_reference` &ltstring&gt  An Identifier of the transaction for the CustomerPayBillOnline transaction type.
        `required : false`
-    * `transaction_desc` <string> Any additional information/comment that can be sent along with the request from  
+    * `transaction_desc` &ltstring&gt Any additional information/comment that can be sent along with the request from
        your system. `required : false`
