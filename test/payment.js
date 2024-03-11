@@ -1,4 +1,4 @@
-const Daraja = require('@saverious/daraja');
+const Daraja = require('../index');
 
 async function payViaMpesa() {
     try{
