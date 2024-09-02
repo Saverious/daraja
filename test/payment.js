@@ -1,23 +1,25 @@
+require('dotenv').config();
 const Daraja = require('../index');
+const { CONSUMER_KEY, CONSUMER_SECRET, PHONE, CALLBACK } = process.env;
 
 async function payViaMpesa() {
     try{
         const daraja = new Daraja({
-            consumer_key : 'your consumer key',
-            consumer_secret : 'your consumer secret',
+            consumer_key : CONSUMER_KEY,
+            consumer_secret : CONSUMER_SECRET,
             environment : 'development' 
         });
         
         const response = await daraja.stkPush({
-            sender_phone : '0767456201',
+            sender_phone : PHONE,
             payBillOrTillNumber : '174379',
             amount : '1',
-            callback_url : 'https://ac10-102-135-169-116.ngrok-free.app'
+            callback_url : CALLBACK
         });
         
         console.log('safaricom response : ', response);
-    }catch(error){
-        console.log('payment error : ', error);
+    }catch(e){
+        console.log('payment error : ', e);
     }
 }
 

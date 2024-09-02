@@ -15,8 +15,8 @@ class Daraja {
             : 'development';
 
         this.domain = this.environment === 'production'
-            ? 'https://api.safaricom.co.ke'
-            : 'https://sandbox.safaricom.co.ke';
+            ? 'api.safaricom.co.ke'
+            : 'sandbox.safaricom.co.ke';
 
         this.accessToken = accessToken.bind(this)(this.api_key, this.api_secret, this.domain);
     }

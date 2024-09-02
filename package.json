@@ -21,7 +21,7 @@
     "url": "https://github.com/Saverious/daraja/issues"
   },
   "homepage": "https://github.com/Saverious/daraja#readme",
-  "dependencies": {
-    "axios": "^1.6.2"
+  "devDependencies": {
+    "dotenv": "^16.4.5"
   }
 }
