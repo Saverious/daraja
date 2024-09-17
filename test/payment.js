@@ -1,4 +1,5 @@
 require('dotenv').config();
+
 const Daraja = require('../index');
 const { CONSUMER_KEY, CONSUMER_SECRET, PHONE, CALLBACK } = process.env;
 
@@ -19,7 +20,7 @@ async function payViaMpesa() {
         
         console.log('safaricom response : ', response);
     }catch(e){
-        console.log('payment error : ', e);
+        console.log(e);
     }
 }
 

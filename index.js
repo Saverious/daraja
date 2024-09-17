@@ -4,8 +4,14 @@ const { stk_push } = require('./apis/stkPush');
 
 class Daraja {
     constructor(args = {}){
-        if(!args.consumer_key || !args.consumer_secret || !args.environment)
-            throw new Error('Missing required arguments');
+        const missingArgs = [];
+        if (!args.consumer_key) missingArgs.push('consumer_key');
+        if (!args.consumer_secret) missingArgs.push('consumer_secret');
+        if (!args.environment) missingArgs.push('environment');
+
+        if (missingArgs.length) {
+            throw new Error(`Missing required arguments: ${missingArgs.join(', ')}`);
+        }
 
         this.api_key = args.consumer_key;
         this.api_secret = args.consumer_secret;
@@ -21,9 +27,17 @@ class Daraja {
         this.accessToken = accessToken.bind(this)(this.api_key, this.api_secret, this.domain);
     }
 
-    async stkPush(args = {}){
-        if(!args.sender_phone || !args.payBillOrTillNumber || !args.amount || !args.callback_url)
-            throw new Error('Missing required arguments');
+    async stkPush(args = {}) {
+        const stkPushArgs = []
+
+        if (!args.sender_phone) stkPushArgs.push('sender_phone');
+        if (!args.payBillOrTillNumber) stkPushArgs.push('payBillOrTillNumber');
+        if (!args.amount) stkPushArgs.push('amount');
+        if (!args.callback_url) stkPushArgs.push('callback_url');
+        
+        if (stkPushArgs.length) {
+            throw new Error(`Missing required arguments in stkPush: ${stkPushArgs.join(', ')}. `);
+        }
 
         if(this.environment === 'production' && !args.passkey)
             throw new Error('passkey is undefined');
